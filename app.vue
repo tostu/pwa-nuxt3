@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <VitePwaManifest />
-    <NuxtLoadingIndicator />
+  <VitePwaManifest />
+    <!-- <NuxtLoadingIndicator /> -->
     <NuxtLayout>
-      <NuxtWelcome />
+      <!-- <ion-router-outlet /> -->
+      <!-- <NuxtPage /> -->
+      <ion-app>
+        <ion-router-outlet />
+      </ion-app>
     </NuxtLayout>
-  </div>
 </template>
 

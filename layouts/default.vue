@@ -1,11 +1,16 @@
 <script setup>
+
 // you don't need this: only for testing purposes
 const date = useAppConfig().buildDate
+
+
 </script>
 
 <template>
   <main>
-    <slot />
+        <slot />
+
+    
     <!-- <footer>Built Date: {{ date }}</footer> -->
     <ClientOnly>
       <div
@@ -51,6 +56,7 @@ const date = useAppConfig().buildDate
     </ClientOnly>
   </main>
 </template>
+
 
 <style>
 .pwa-toast {
